@@ -1,0 +1,10 @@
+.containerMenu{
+    text-align: center;
+}
+table, td,th{
+    border: 5px solid blue;
+    outline: 1px dotted lightblue;
+}
+table{
+    margin: 0 auto;
+}
