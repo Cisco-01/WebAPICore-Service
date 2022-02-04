@@ -40,6 +40,7 @@ namespace ServicioWebAPICoreNorthwind.Controllers
         public IEnumerable<AnioDeVentas> AniosdeVentas()
         {
             var query = from o in db.Orders
+                        orderby o.OrderDate.Value.Year descending
                         select new AnioDeVentas
                         {
                             Anios = o.OrderDate.Value.Year
